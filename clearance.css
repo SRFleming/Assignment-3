@@ -1,0 +1,262 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+  .dropdown {
+    width:11em;
+  }
+  
+  .sidebar {
+    position: fixed;
+    float:left;
+    background-color: rgb(238, 238, 238);
+    border: 0.11764705882352941em solid black;
+    padding-top: 6em;
+    width: 10em;
+    height:50em;
+    padding-left: 0.3em;
+    z-index: 0;
+  }
+
+  .filterstitle {
+    color:gray;
+    text-decoration: underline;
+    padding-bottom: 0.5em;
+    font-size: 1.2em; 
+  }
+  
+  .filters {
+    position:absolute;
+    display:block;
+  }
+
+  .filters a {
+    position:relative;
+    display:block;
+    border-bottom: 0.11764705882352941em solid grey;
+    padding-top: 0.5em;
+    background-color: white;
+    padding-bottom: 0.5em;
+    width: 12em;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    border: 0.11764705882352941em solid black;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0.5em;
+    font-size: 0.8em;
+  }
+
+  .filters b {
+    position:relative;
+    display: block;
+    padding:0.2em;
+  }
+
+  .filters a:hover {
+    background-color: grey;
+  }
+
+  .notnav {
+    padding-top: 4.705882352941177em;
+    padding-right: 1.5%;
+    padding-left: 5em;
+  }
+
+  .viewing {
+    color:gray;
+    padding-bottom: 0.5em;
+    font-size: 0.7em; 
+    padding-left: 9em;
+  }
+
+  .suboffers {
+    width:auto;
+    display:flex;
+    flex-wrap: wrap;
+    row-gap:0.5em;
+    column-gap: 0.4em;
+    justify-content: space-between;
+    padding-top:0.5em;
+    padding-left: 6em;
+    padding-bottom:1em;
+    z-index: 2;
+  }
+
+  .box {
+    display: block;
+    position:relative;
+    background-color: white;
+    margin: 0 auto;
+    border: 0.11764705882352941em solid black;
+    width: 21em;
+    padding:0.5em;
+    height:auto;
+  }
+
+  .notimg a {
+    color: #B20000;
+  }
+
+  .bottomitem {
+    font-size: 1em;
+    margin-left: 8.5em;
+    color: #B20000;
+    width:7.9em;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .bottomcontent {
+    font-family: Roboto;
+    font-weight: 700;
+    width:28em;
+    height: auto;
+    padding-top: 0.5em;
+    font-size: 0.7em;
+    padding-left: 12em;
+  }
+
+  .prices {
+    display:flex;
+    justify-content: space-between;
+    padding-top: 0.6em;
+    width:10em;
+  }
+
+  .bottomprice {
+    padding-right: 0.7em;
+    padding-left: 0.3em;
+    font-size: 1.1rem;
+    color: #B20000;
+  }
+
+  .crossed-outprice {
+    text-decoration-line: line-through;
+    color: grey;
+    font-size: 0.8rem;
+  }
+
+  .deskborder {
+    float: left;
+    width:8em;
+    border: 0.11764705882352941em solid black;
+  }
+
+  .addtocart:hover {
+    background-color: grey;
+  }
+
+  .addtocart {
+    font-size: 1em;
+    color: #B20000;
+    border: 0.11764705882352941em solid black;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .addtowishlist:hover {
+    background-color: black;
+  }
+
+  .addtowishlist {
+    font-size: 1em;
+    color: gray;
+    border: 0.11764705882352941em solid black;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .finaladd {
+    display:flex;
+    justify-content: space-evenly;
+    width:22em;
+    font-size: 0.9em;
+    padding-top: 0.5em;
+  }
+
+  .finaladd h1 {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    width: 10.1em;
+  }
+
+  .moreoffers {
+    background-color: white;
+    width: 82.3em;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    border: 0.11764705882352941em solid black;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0.7em;
+    font-size: 0.8em;
+  }
+
+  .moreoffers:hover {
+    background-color: grey;
+  }
+
+  .subbar {
+    padding-left: 5.89em;
+    padding-bottom: 1em;
+  }
+  
+  @media screen and (max-width: 700px) {
+
+    .notnav {
+      padding-top: 8.5em;
+    }
+
+    .filters a {
+      display: none;
+    }
+
+    .filters b {
+      display: none
+    }
+
+    .sidebar {
+      width: 100%;
+      height: 8em;
+    }
+
+    .bottomcontent {
+      padding-left: 0em;
+    } 
+
+    .suboffers {
+      padding-left: 0em;
+    }
+
+    .notnav {
+      padding-left: 1.5%
+    }
+
+    .subbar {
+      padding-left: 0;
+      padding-bottom: 1em;
+    }
+
+    .moreoffers {
+      width: 100%;
+    }
+
+    .viewing {
+      padding: 0;
+      width:100%;
+      text-align: center;
+    }
+
+    }
+
+    @media screen and (max-width: 346px) {
+      .notnav {
+        padding-top: 9.5em;
+      }
+    }
+
+
+

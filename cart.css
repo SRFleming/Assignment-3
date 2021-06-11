@@ -1,0 +1,287 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+  .top {
+    width:11em;
+  }
+
+  .dropdown-content h5 {
+    color:#B20000;
+    text-decoration: none;
+    border-bottom: 0.11764705882352941em solid grey;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    display: block;
+    text-align: center;
+  }
+  .dropdown-content h5:hover {
+    background-color: grey;
+  }
+
+  .sidebar b {
+    border-bottom: 0.11764705882352941em solid grey;
+    width: 100%;
+    
+  }
+
+  .sidebar r {
+    color: #B20000;
+    float: right;
+    padding-right: 1rem;
+  }
+
+  .sidebar g {
+    color: rgb(117, 117, 117);
+    float: right;
+    padding-right: 1rem;
+  }
+
+  .sidebar {
+    position: fixed;
+    right: 0; 
+    background-color: rgb(255, 255, 255);
+    border: 0.11764705882352941em solid black;
+    padding-top: 5em;
+    width: 20em;
+    height:100%;
+    padding-left: 0.3em;
+    z-index: 0;
+  }
+
+  .links {
+    padding-bottom: 10em;
+    padding-left: 1em;
+  }
+
+  .links h4 {
+    color: rgb(75, 75, 75);
+    text-decoration: underline;
+    font-size: 1em;
+    cursor: pointer;
+    padding-bottom:0.3em;
+  }
+
+  .postcode {
+    text-align: center;
+    width: 8em;
+    height:auto;
+    float:right;
+    margin-right: -1em;
+  }
+
+  .postcodetext {
+    font-family: Zen Dots;
+    font-size:0.65em;
+    border: 0.058823529411764705em solid grey;
+    border-radius: 0.29411764705882354em;
+    height: 2.3529411764705883em;
+    width: 8em;
+    padding: 0.11764705882352941em 0.058823529411764705em 0.11764705882352941em 0.5em;
+    outline: 0;
+    background-color: #f5f5f5;
+    margin:0em 0em 0.5882352941176471em 0em;
+  }
+
+  .postcodename {
+    padding-top: 0.12em;
+    padding-bottom: 0.7em;
+  }
+
+  .checkout li {
+    padding-left: 1em;
+  }
+
+  .subtotal {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+  }
+
+  .checkoutprice {
+    padding-top: 1em;
+    font-size: 1.2em; 
+  }
+
+  .checkout b {
+    position:relative;
+    display: block;
+    width:18em;
+    padding-bottom: 1em;
+    justify-content: center;
+  }
+
+  .secondary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    height: auto;
+    padding-top: 1em;
+    padding-right: 0.2em;
+  }
+
+  
+  .secondary a {
+    display:block;
+    background-color: white;
+    width: 19em;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+    border: 0.11764705882352941em solid black;
+    text-align: center;
+    padding: 0.5882352941176471em;
+    font-size: 1em;
+  }
+
+  .secondary a:hover{
+    background-color: grey;
+  }
+
+  .notnav {
+    padding-top: 4.705882352941177em;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+  }
+
+  .items {
+    display:flex;
+    flex-wrap: wrap;
+    row-gap:0.5em;
+    column-gap: 0.4em;
+    justify-content: space-between;
+    padding-bottom:1em;
+  }
+
+  .box {
+    background-color: white;
+    margin: 0 auto;
+    border: 0.11764705882352941em solid black;
+    width: 76em;
+    padding:0.5em;
+    height:auto;
+  }
+
+  .itemtitle {
+    font-size: 2em;
+    padding-top: 0.1em;
+    padding-left: 0.5em;
+    padding-bottom: 0.6em;
+    color: #B20000;
+  }
+
+  .description {
+    font-family: Roboto;
+    font-weight: 700;
+    width:42em;
+    margin-left: 14em;
+    height: auto;
+    font-size: 1em;
+  }
+
+  .qtydrop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20em;
+  }
+
+  .qtydrop a {
+    color: #B20000;
+  }
+
+  .bottom {
+    width:4em;
+  }
+
+  .prices {
+    display:flex;
+    justify-content: space-between;
+    width: 24em;
+    font-size: 1.3em;
+    padding-top: 0.3em;
+  }
+
+  .deskborder {
+    float: left;
+    width:13em;
+    border: 0.11764705882352941em solid black;
+  }
+
+  .price {
+    padding-right: 0.1em;
+    padding-left: 0.4em;
+    color: #B20000;
+  }
+
+  @media screen and (max-width: 700px) {
+
+    .links {
+      padding-bottom: 1em;
+    }
+
+    .sidebar {
+      position: relative;
+      padding-top: 7em;
+      width: 100%;
+      height:100%;
+      padding-left: 0.3em;
+    }
+
+    .notnav {
+      padding-top: 6.5em;
+    }
+
+    .box {
+      width: 100%;
+      padding:0.5em;
+    }
+
+    .deskborder {
+      width: 100%;
+      float: none;
+    }
+
+    .items {
+      margin-top: -6em;
+    }
+
+    .itemtitle {
+      font-size: 1.5em;
+      float:left;
+      padding-bottom: 0.6em;
+      color: #B20000;
+    }
+
+    .description {
+      width: 100%;
+      font-size: 0.85em;
+      margin-left: 0.3em;
+    }
+
+    .prices {
+      display:flex;
+      justify-content: space-between;
+      width: 24em;
+      font-size: 0.8em;
+      padding-top: 0.3em;
+    }
+
+    .qtydrop {
+      padding-right: 0;
+    }
+
+    .secondary {
+      padding-bottom: 0.6em;
+    }
+  
+  }
+
+  @media screen and (max-width: 346px) {
+      .notnav {
+        padding-top: 9.5em;
+      }
+  }
+
+
+

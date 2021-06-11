@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+  <head>
+  <style>
+  </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script type="text/javascript" src="slideshow.js"></script>
+    <title>Homepage</title>
+  </head>
+  <body>
+    <nav>
+      <div class="dropdown">
+        <button class="dropbtn">Home</button>
+        <div class="dropdown-content">
+          <a href="#">Categories</a>
+          <a href="clearance.html">Clearance</a>
+          <a href="#">Top sellers</a>
+          <a href="#">Login</a>
+          <a href="#">Contact us</a>
+        </div>
+      </div>  
+      <div class="logo">
+          <div class="mainlogo"><a href="index.html"><img src="images\logo.svg" alt="logo" width="220" height="55"></a></div>
+          <div class="mobilelogo"><a href="index.html"><img src="images\logo.svg" alt="logo" width="180" height="45"></a></div>
+        </div>
+        <div class ="textbox">
+          <img src="images\searchicon.svg" class="search-icon">
+          <input type="text" placeholder="Shop 1000+ products online..." class="searchtext responsive">
+        </div>
+  
+        <div class="cartandwish">
+          <li><a class="btn-primary" href="cart.html">Cart</a></li>
+          <li><a class="btn-secondary" href="#">Wishlist</a></li>            
+        </div>
+          <div class="cartandwishmobile">
+          <li><a href="cart.html" class="carticon"><img src="images\cart.png" width="30" height="30"></a></li>
+          <li><a href="#" class="wishlisticon"><img src="images\wishlist.png" width="30" height="30"></a></li>
+          <li><a href="#" class="contactusicon"><img src="images\contactus.png" width="30" height="30"></a></li>
+        </div>
+    </nav>
+    <div class="notnav">
+      <div class="slideshow-container">
+        <div class="slides fade">
+          <img src="images\chair.jpg" style="width:100%">
+        </div>
+        <div class="slides fade">
+          <img src="images\chairside.jpg" style="width:100%">
+        </div>
+      </div>
+      <br>
+      <div class="sidecontent">
+        <div class="chair"> 
+          <h2 class="title">Aleksa Swivel Chair</h2>
+          <div class="content">
+            <z>Take a spin in the Aleksa Swivel 
+            Armchair. A rotund back, sloping
+            armrests and sinkable cushions...</z>
+          </div>
+          <h1 class="price">$799.99</h1>
+          <div class="additem">
+            <h1 class="addtocart">Add to Cart</h1>
+            <h1 class="addtowishlist">Add to Wishlist</h1>
+          </div>
+        </div>
+        <div class="subscribe responsive">
+          <h3 class="title">Subscribe for crazy discounts!</h3>
+          <input type="text" placeholder="e-mail" class="searchtext2">
+        </div>
+      <div class="suboffers">
+        <div class="box">
+          <a class="title bottomtitle" href="clearance.html">Clearance</a>
+          <div class="deskpad">
+            <img src="images\desk.jpg" alt="desk" class="deskborder">
+          </div>
+          <div class="notimg">
+            <h2 class="bottomitem"><a href="item.html">Atoka Desk</a></h2>
+            <div class="bottomcontent">
+              <p>The charcoal legs of the Atoka Desk 
+              are fashioned in an intersecting
+              framework, giving the piece its raw, 
+              industrial and minimal aesthetic...</p>
+            </div>
+            <div class="prices">
+              <h1 class="bottomprice">$699.99</h1>
+              <h2 class="crossed-outprice">$799.99</h2>
+            </div>
+            <div class="finaladd">
+              <h1 class="addtocart bottomadd">Add to Cart</h1>
+              <h1 class="addtowishlist bottomadd">Add to Wishlist</h1>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <a class="title bottomtitle" href="#">Hot Deals</a>
+          <div class="deskpad">
+          <img src="images\desk.jpg" alt="desk" class="deskborder">
+          </div>
+          <div class="notimg">
+            <h2 class="bottomitem"><a href="item.html">Atoka Desk</a></h2>
+            <div class="bottomcontent">
+              <p>The charcoal legs of the Atoka Desk 
+              are fashioned in an intersecting
+              framework, giving the piece its raw, 
+              industrial and minimal aesthetic...</p>
+              </div>
+              <div class="prices">
+                <h1 class="bottomprice">$699.99</h1>
+                <h2 class="crossed-outprice">$799.99</h2>
+              </div>
+            <div class="finaladd">
+              <h1 class="addtocart bottomadd">Add to Cart</h1>
+              <h1 class="addtowishlist bottomadd">Add to Wishlist</h1>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <a class="title bottomtitle" href="#">New Arrivals</a>
+          <div class="deskpad">
+            <img src="images\desk.jpg" alt="desk" class="deskborder">
+          </div>
+          <div class="notimg">
+            <h2 class="bottomitem"><a href="item.html">Atoka Desk</a></h2>
+            <div class="bottomcontent">
+              <p>The charcoal legs of the Atoka Desk 
+              are fashioned in an intersecting
+              framework, giving the piece its raw, 
+              industrial and minimal aesthetic...</p>
+            </div>
+            <div class="prices">
+              <h1 class="bottomprice">$699.99</h1>
+              <h2 class="crossed-outprice">$799.99</h2>
+            </div>
+            <div class="finaladd">
+              <h1 class="addtocart bottomadd">Add to Cart</h1>
+              <h1 class="addtowishlist bottomadd">Add to Wishlist</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 2000);
+      }
+      </script>
+  </body>
+</html>

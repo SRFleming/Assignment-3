@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #363636;
+  background-image: url("backgroundred.svg");
+  font-family: Zen Dots;
+  background-repeat: no-repeat;
+  background-position: left -300px;
+  list-style-type: none;
+  background-attachment: fixed;
+}
+
+/* Add a black background color to the top navigation */
+  nav {
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 1%;
+    row-gap: 2%;
+    z-index: 1;
+    align-items: center;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    width: 100%;
+    height: 4em;
+    background-color: white;
+    border-bottom: 2px solid black;
+    overflow: visible;
+  }
+
+  nav :nth-child(1) { order: 2; }
+  nav :nth-child(2) { order: 1; }
+  nav :nth-child(3) { order: 2; }
+  nav :nth-child(4) { order: 2; }
+  nav :nth-child(5) { order: 3; }
+
+  /* Add a color to the active/current link */
+  nav a.active {
+    background-color: black;
+    color: white;
+  }
+
+  .dropdown {
+    position:relative;
+    display: inline-block;
+    align-items: center;
+  }
+  
+  .dropdown .dropbtn {
+    background-color: whitesmoke;
+    border: 0.11764705882352941em solid black;
+    order: 1;
+    font-family: Zen Dots;
+    padding-top: 0.5882352941176471em;
+    padding-bottom: 0.5882352941176471em;
+    color: #B20000;
+    text-decoration: none;
+    width:100%;
+    align-items: center;
+    margin: 0;
+    font-size: 1em;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    position:absolute;
+    display:none;
+    background-color: whitesmoke;
+    border-bottom: 0.11764705882352941em solid black;
+    border-left: 0.11764705882352941em solid black;
+    border-right: 0.11764705882352941em solid black;
+    width: inherit;
+    font-size:1em;
+    z-index: 1;
+  }
+
+  .dropbtn:hover {
+    background-color: grey;
+  }
+
+  .dropdown:hover .dropdown-content {
+    position:absolute;
+    display: block;
+    text-align: center;
+    opacity: 100%;
+    transition: all 250ms linear;
+  }
+  .dropdown-content a {
+    color:#B20000;
+    text-decoration: none;
+    border-bottom: 0.11764705882352941em solid grey;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    display: block;
+    text-align: center;
+    z-index: 1;
+  }
+  .dropdown-content a:hover {
+    background-color: grey;
+  }
+
+  .searchtext {
+    font-family: Zen Dots;
+    font-size:1em;
+    border: 0.058823529411764705em solid grey;
+    border-radius: 0.29411764705882354em;
+    height: 2.3529411764705883em;
+    width: 38vw;
+    padding: 1rem 1rem 1rem 2.1rem;
+    overflow: hidden;
+    outline: 0;
+    background-color: #f5f5f5;
+
+    }
+
+  .search-icon {
+    position:absolute;
+    width: 1.6rem;
+    margin: 0.2em 0em 0em 0.2em; 
+  }
+
+  .cartandwish {
+    display:flex;
+    gap: 2%;
+  }
+
+  .cartandwish a {
+    display: inline-block;
+    background-color: white;
+    width: 8.823529411764707em;
+    cursor: pointer;
+    text-decoration: none;
+    border: 0.11764705882352941em solid black;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.5882352941176471em;
+    font-size: 1em;
+  }
+
+  .cartandwish a:hover {
+    background-color: grey;
+  }
+
+  .btn-primary {
+    color: #B20000;
+  }
+
+  .btn-secondary {
+    color: black;
+  }
+
+  .cartandwishmobile {
+    display:none;
+   }
+
+  .mobilelogo {
+    display:none;
+  }
+
+  @media screen and (max-width: 1100px) {
+
+    .mainlogo {
+      display:none;
+    }
+  }
+  @media screen and (max-width: 700px) {
+  
+    .searchtext {
+      width: 60vw;
+      font-size: 0.7em;
+    }
+    .dropdown-content {
+      font-size: 0.8em;
+    }
+    .dropbtn {
+      width: 1em;
+    }
+
+    .search-icon {
+      width: 1.5em;
+    }
+
+    .cartandwish {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+     }
+
+     .cartandwishmobile {
+      position: relative;
+      align-items:center;
+      top:0;
+      left:0;
+      display:flex;
+      gap: 0.4rem;
+    }
+  
+    .mobilelogo {
+      display:contents;
+    }
+  
+    .cartandwishmobile img {
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    nav :nth-child(1) { order: 2; }
+    nav :nth-child(2) { order: 1; }
+    nav :nth-child(3) { order: 4; }
+    nav :nth-child(4) { order: 2; }
+    nav :nth-child(5) { order: 4; }
+
+    nav {
+      height: 6em;
+      width: 100%;
+      flex-wrap:wrap;
+      flex-direction:row;
+      justify-content: space-evenly;
+    }
+
+  }
+
+  @media screen and (max-width: 346px) {
+    nav {
+      height: 9em;
+    }
+  }
+
+
+
